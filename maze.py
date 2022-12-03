@@ -270,6 +270,7 @@ class Maze():
             max = len(Q)
             index = random.randint(0, max-1)
             eachWall = Q.pop(index)
+            # eachWall = Q.pop()
             if(eachWall.toBreak()):
                 next = eachWall.toSection
                 next.addWalls(Q)
